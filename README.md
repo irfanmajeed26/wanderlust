@@ -80,7 +80,15 @@ _I'd love for you to make the most of this project - it's all about learning, he
 2. **Install Dependencies**
 
    ```bash
-   npm i
+         # installs nvm (Node Version Manager)
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+        # download and install Node.js (you may need to restart the terminal)
+        nvm install 22
+        # verifies the right Node.js version is in the environment
+        node -v # should print `v22.2.0`
+        # verifies the right NPM version is in the environment
+        npm -v # should print `10.7.0`          
+        npm i
    ```
 
 3. **Configure Environment Variables**
@@ -88,7 +96,7 @@ _I'd love for you to make the most of this project - it's all about learning, he
    ```bash
    cp .env.sample .env.local
    ```
-
+      
 4. **Launch the Development Server**
 
    ```bash
